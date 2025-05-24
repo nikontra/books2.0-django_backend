@@ -3,7 +3,7 @@ from rest_framework.serializers import ModelSerializer
 from store.models import Book
 
 
-class BookSerializer(ModelSerializer):
+class BooksSerializers(ModelSerializer):
     class Meta:
         model = Book
-        fields = ('price',)
+        fields = '__all__'
